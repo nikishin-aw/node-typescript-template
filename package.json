@@ -1,0 +1,31 @@
+{
+    "name": "node-typescript-template",
+    "version": "1.0.0",
+    "private": false,
+    "license": "MIT",
+    "author": {
+        "name": "Ilya (Ilia) Nikishin",
+        "email": "ilya.ruwork@gmail.com"
+    },
+    "scripts": {
+        "build": "node_modules/.bin/tsc",
+        "start": "node dist/app.js",
+        "bns": "node_modules/.bin/tsc && node dist/app.js",
+        "reformat": "node_modules/.bin/eslint . --fix"
+    },
+    "_moduleAliases": {
+        "@": "./dist",
+        "@types": "./dist/types"
+    },
+    "dependencies": {
+        "module-alias": "^2.2.2",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "source-map-support": "^0.5.19",
+        "typescript": "^4.0.3",
+        "@typescript-eslint/eslint-plugin": "^4.2.0",
+        "@typescript-eslint/parser": "^4.2.0",
+        "eslint": "^7.9.0"
+    }
+}
